@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<script src="angular.min.js"></script>
+<script>angular.module("myapp",[]).controller("login", function($scope,$rootscope){
+    $scope.login1=true;
+  $scope.home1=false;
+});</script>
+<center>
+
+<body >
+<fieldset>Registration
+<div  ng-controller="login" ng-show="login1" >
+Username:<input type="text" ng-model="username" ><br>
+Password:<input type="text" ng-model="password" ><br>
+<br>
+<input type="button" ng-model="buton" value="submit"><br>
+</div>
+</fieldset>
+
+<!--<div  ng-controller="myctrl"  ng-show="welcome">
+Welcome {{ }}
+</div>-->
+
+
+</center>
+</body>
+</html>
+

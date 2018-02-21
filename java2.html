@@ -1,0 +1,61 @@
+<html>
+<head>
+<script>
+function getvalue()
+{
+document.getElementById('drop').innerHTML=document.getElementById('demodrop').value;
+alert("hi");
+document.getElementById('text').innerHTML=document.getElementById('demotext').value;
+document.getElementById('area').innerHTML=document.getElementById('tearea').value;
+document.getElementById('checkbox').innerHTML=document.getElementById('check').value;
+}
+
+</script>
+</head>
+<form action="#">
+<center>
+<body>
+<fieldset>
+
+<legend><b>Registration</b></legend><br>
+
+
+
+  First name:<br>
+  <input type="text" name="firstname" id="demotext" required>
+  <br>
+<p id="text"></p>
+  Last name:<br>
+  <input type="text" name="lastname" required>
+  <br>
+<textarea rows="6" cols="12" id="tearea">
+</textarea>
+<p id="area"></p>
+  <b>checkbox:</b>
+<input type="checkbox" name="vehicle" id="check" value="Bike" > I have a bike
+  <input type="checkbox" name="vehicle" id="check"  value="Car"> I have a car<br>
+<br>
+<p id="checkbox"></p>
+<b>drop down list:</b>
+<select id="demodrop">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select>
+<p id="drop"></p>
+<b>radio button:</b><input type = "radio" name = "radSize"  value = "small" > small
+<input type = "radio" name = "radSize"  value = "medium" > medium
+<input type = "radio" name = "radSize"  value = "large" > large
+<br>
+ <br>
+</form>
+<input type="submit" value="submit" onclick="getvalue(); return false; ">
+
+
+
+</fieldset>
+
+</center>  
+</body>
+</html>

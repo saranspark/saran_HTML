@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<script src="angular.min.js"></script>
+<body ng-app="">
+<form>
+  Pick a topic:
+  <input type="radio" ng-model="myVar" value="dogs">Dogs
+  <input type="radio" ng-model="myVar" value="tuts">Tutorials
+  <input type="radio" ng-model="myVar" value="cars">Cars
+</form>
+
+<div ng-switch="myVar">
+  <div ng-switch-when="dogs">
+     <h1>Dogs</h1>
+     <p>Welcome to a world of dogs.</p>
+  </div>
+  <div ng-switch-when="tuts">
+     <h1>Tutorials</h1>
+     <p>Learn from examples.</p>
+  </div>
+  <div ng-switch-when="cars">
+     <h1>Cars</h1>
+     <p>Read about cars.</p>
+  </div>
+</div>
+
+<p>The ng-switch directive hides and shows HTML sections depending on the value of the radio buttons.</p>
+<body ng-app="">
+<select ng-model="myVari">
+  <option value="dogs">Dogs
+  <option value="tuts">Tutorials
+  <option value="cars">Cars
+</select>
+<hr>
+<div ng-switch="myVari">
+  <div ng-switch-when="dogs">
+     <h1>Dogs</h1>
+     <p>Welcome to a world of dogs.</p>
+  </div>
+  <div ng-switch-when="tuts">
+     <h1>Tutorials</h1>
+     <p>Learn from examples.</p>
+  </div>
+  <div ng-switch-when="cars">
+     <h1>Cars</h1>
+     <p>Read about cars.</p>
+  </div>
+  <div ng-switch-default>
+     <h1>Switch</h1>
+     <p>Select topic from the dropdown, to switch the content of this DIV.</p>
+  </div>
+</div>
+<hr>
+
+<p>The ng-switch directive hides and shows HTML sections depending on a certain value.</p>
+<div ng-app="">
+  <form>
+    Check to show a header:
+    <input type="checkbox" ng-model="myVa">
+  </form>
+  <h1 ng-show="myVa">My Header</h1>
+</div>
+
+<p>The header's ng-show attribute is set to true when the checkbox is checked.</p>
+
+</body>
+</html>

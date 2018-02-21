@@ -1,0 +1,42 @@
+<html>
+<head>
+<script>
+function getvalues(){
+document.getElementById('demoradio').innerHTML=document.getElementById('gender').value;
+alert(document.getElementById('drop').value);
+document.getElementById('demodrop').innerHTML=document.getElementById('drop').value;
+return false;
+var x=document.getElementById("checkk").value;
+document.getElementById("democheck").innerHTML=x;
+
+
+}
+</script>
+</head>
+<form action="#">
+<center><h2>Registration</h2></center>
+<body><br><br><br><br><br>
+<fieldset><legend><h2>Form</h2></legend><center><h3>Name: <input type="text" name="Name" required><br><br><br><br>
+
+Gender: <input type="checkbox" id="gender" name="Gender" value="Female" >Female
+            <input type="checkbox" id="gender"name="Gender" value="Male" >Male<br><br>
+<p id="demoradio"></p>
+</h3>
+
+<select id="drop">
+<option value="scooty"  required>scooty</option>
+<option value="Car"  required>Car</option>
+<option value=" Activa"  required>Activa</option>
+<option value="Bike"  >Bike</option>
+
+</select><br><br>
+<p id="demodrop"></p>
+<form id="checkk">
+  <input type="radio" name="vehicle"  value="2 wheeler" required> 2 wheeler
+  <input type="radio" name="vehicle"  value="4 wheeler" required> 4 wheeler
+  <input type="radio" name="vehicle"  value="other"> Other  <br><br>
+</form>
+<p id="democheck"></p>
+
+<input type="Submit" value='Submit' onclick="getvalues();return false;"> 
+</html>
